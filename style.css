@@ -72,6 +72,7 @@ html,body {
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: x-large;
+    font-weight: bold;
 }
 
 .button-div {   
@@ -80,13 +81,13 @@ html,body {
     align-items: center;
 }
 
-#top-button-div {
+/* #top-button-div {
     position: relative;
-    bottom: 150px;
-}
+    bottom: 800px;
+} */
 
 #bottom-button-div {
-    margin-top:140px;
+    margin-top:50px;
 }
 
 
@@ -107,16 +108,22 @@ width: 100%;
 border: none;
 border-radius: 10px;
 font-family: clean_sports_stencilregular;
+cursor: pointer;
+text-decoration: none;
 }
 
 .hamburger-menu-container {
     display: block;
-    margin-right: 2%;
-    margin-left: 95%;
+    margin-right: 3%;
+    margin-left: 93%;
     padding-top: 1%;
     height: 65px;
     width: 65px;
     z-index: 1;
+    cursor: pointer;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .angled-text {
@@ -127,30 +134,30 @@ width: 50%;
 }
 
 .rect {
-width: 50px;
-height: 10px;
+width: 100px;
+height: 20px;
 margin: 3px;
 background-color: #333333;
 color: white;
 float: right;
 clear: both;
 border-radius: 10px;
+z-index: 0;
 }
 
 #logo {
     width: 65%;
     height: auto;
     color: white;
-    font-size: xx-large;
     font-family: clean_sports_stencilregular;
     margin-left: 2%;
-    margin-top: 4%;
-
+    margin-top: 2%;
 }
 
 .column-containter {
     display: flex;
     flex-direction: row;
+    margin-top:1%;
 }
 
 .text-box {
@@ -170,6 +177,7 @@ border-radius: 10px;
 
 .social-logo{
     padding: 10px;
+    cursor: pointer;
 }
 
 #centered-text {
@@ -181,13 +189,17 @@ border-radius: 10px;
     float: right;
     background-color: #333333;
     border: white;
-    width: 300px;
-    border-radius: 50px 10px;
+    border-style: solid;
+    border-width: 5px;
+    width: 400px;
     padding: 0px;
-    margin-right: 75px;
-    position: relative;
-    bottom: 60px;
+    margin-top: 1%;
+    margin-left: 63%;
+    position: absolute;
+    /* bottom: 60px; */
     color: white;
+    z-index: 10;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #tokenText {
@@ -200,12 +212,117 @@ ul {
     margin: 5px;  
 }
 
+a {
+    color:white;
+}
+
+a:active {
+    color:#F60000;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: yellow;
+}
+
 li {
-    font-size: large;
-    /* background-color:#333333 */
+    font-size: medium;
+    transition: font-size 1s;
+    cursor:pointer;
+    text-decoration: none;
+    font-family: clean_sports_stencilregular;
+
 }
 
 li:hover {
     color: #F60000;
     font-size: large;
+}
+
+#football{
+    width:850px; 
+    height:557px; 
+    position: absolute;
+    bottom: 10px;
+    margin-left:50vw;
+    z-index: 0;
+    transition: width 1s, height 1s;
+}
+
+@media only screen and (max-width: 600px) {
+    #football{
+        width:850px; 
+        height:557px; 
+        position: absolute;
+        /* bottom: 101px; */
+        margin-left:50vw;
+        z-index: 0;
+        transition: width 1s, height 1s;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #football {
+        bottom: 8%;
+    }
+}
+
+#football:hover {
+    width:875px; 
+    height:582px; 
+}
+
+#upper_tier_logo {
+    width: 150px;
+    height: 100px;
+    position:absolute;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+#token-span {
+    position: relative;
+    margin-left:-25px;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 600px) {
+    #angled-div{
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 95%);
+    }
+    #logo{
+        font-size:25px;
+    }
+    #football{
+        display: none;
+    } 
+    .angled-text{
+        margin-left: 10%;
+        width:100%;
+    }
+    #token-span {
+        margin-left: 39px;
+    }
+
+    .column-containter {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin:10%;
+    }
+
+    .hamburger-menu-container {
+        margin-left: 80%;
+        z-index: 1;
+    }
+
+    #pop-out-menu{
+        margin-left: 0px;
+        margin-top: 30%;
+    }
+    
+    span#utv-large {
+        font-size:25px;
+    }
+
 }

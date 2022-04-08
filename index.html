@@ -14,28 +14,31 @@
         <script src="" async defer></script>
     </head>
     <body>
+        <div id="pop-out-menu">
+            <ul style="margin: 10px; padding: 0px; border-radius:15px;">
+                <li class="popout-menu-li" style="list-style-type: none; text-align: center;"><a href="#home-section" style="text-decoration: none;">HOME</a></li>
+                <li class="popout-menu-li" style="list-style-type: none; text-align: center;"><a href="#whitepaper-section " style="text-decoration: none;">WHITEPAPER</a></li>
+                <li class="popout-menu-li" style="list-style-type: none; text-align: center;"><a href="#purchase-section" style="text-decoration: none;">PURCHASE</a></li>
+            </ul>
+        </div>
         <div id="angled-div">
+            <img id="upper_tier_logo" src="UTV Token Design/1x/UTV-Logo-Long-Form.png" alt="football-image">
             <div class="hamburger-menu-container" onclick="hamburgerHover()">
                 <div class="rect"></div>
                 <div class="rect"></div>
                 <div class="rect"></div>
             </div>
-            <div id="pop-out-menu">
-                <ul style="margin: 10px; padding: 0px; border-radius:15px;">
-                    <li class="popout-menu-li" style="list-style-type: none;">Home</li>
-                    <li class="popout-menu-li" style="list-style-type: none;">Whitepaper</li>
-                    <li class="popout-menu-li" style="list-style-type: none;">Purchase</li>
-                </ul>
+
+            <div id="logo"><span id="utv-large" style="font-family:sf_sports_nightregular; font-size: 350px;">UTV</span>
+                <span id="token-span">TOKEN </span>
             </div>
-            <div id="logo"><span style="font-family:sf_sports_nightregular; font-size: 250px;">UTV</span>
-                 TOKEN
-            </div>
-            <div class="angled-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="angled-text" id="home-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore <br> et dolore magna aliqua.</div>
         </div>
+        <img id="football" src="UTV Token Design/1x/Football.D15.2k.png" alt="football-image">
 
         <div class="button-div" id="top-button-div">
             <div class="module-border-wrap">
-            <button class="site-button">Whitepaper</button>
+            <button class="site-button" id="whitepaper-section"><a style="text-decoration: none;" href="https://polygonscan.com/token/0x716f1964f5cbffcd36743f31277461da9989801c">WHITEPAPER</a></button>
             </div>
         </div>
 
@@ -68,15 +71,15 @@
 
             <div class="button-div" id="bottom-button-div">
                 <div class="module-border-wrap">
-                <button class="site-button">Whitepaper</button>
+                <button class="site-button" id="purchase-section"> <a style="text-decoration: none;" href="https://polygonscan.com/token/0x716f1964f5cbffcd36743f31277461da9989801c">PURCHASE</a> </button>
                 </div>
             </div>
             <p id="centered-text" style="color:white; text-align: center;">Purchase this Coin on the Polygon Network</p>
             <div class="social-media-logos">
-                <img src="UTV Token Design/logos/facebook.png" alt="social-logo" style="width: 50px; height: 50px; margin:25px;">
-                <img src="UTV Token Design/logos/instagram.png" alt="social-logo" style="width: 50px; height: 50px; margin:25px;">
-                <img src="UTV Token Design/logos/twitter.png" alt="social-logo" style=" width: 50px; height: 50px; margin:25px;">
-                <img src="UTV Token Design/logos/youtube.png" alt="social-logo" style="width: 50px; height: 50px; margin:25px;">
+                <a href="https://www.facebook.com"> <img class="social-logo" src="UTV Token Design/logos/facebook.png" alt="social-logo" style="width: 50px; height: 50px; margin:25px;"></a>
+                <a href="https://www.facebook.com"> <img class="social-logo" src="UTV Token Design/logos/instagram.png" alt="social-logo" style="width: 50px; height: 50px; margin:25px;"></a>
+                <a href="https://www.facebook.com"> <img class="social-logo" src="UTV Token Design/logos/twitter.png" alt="social-logo" style=" width: 50px; height: 50px; margin:25px;"></a>
+                <a href="https://www.facebook.com"> <img class="social-logo" src="UTV Token Design/logos/youtube.png" alt="social-logo" style="width: 50px; height: 50px; margin:25px;"></a>
             </div>
             <p id="centered-text" style="color:white; text-align: center;">Copyright Upper Tier Video</p>
             <script src="app.js"></script>
