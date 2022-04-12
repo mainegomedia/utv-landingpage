@@ -66,7 +66,7 @@ html,body {
 
 #angled-div{
     clip-path: polygon(0 0, 100% 0, 100% 28%, 0 95%);
-    width: 100vw;
+    width: 100%;
     height: 700px;
     background-image: linear-gradient(45deg,#FFFD00, #F60000);
     padding: 0px;
@@ -126,16 +126,22 @@ text-decoration: none;
     top: 0;
 }
 
-.angled-text {
+.angled-text, #home-section {
 display: block;
+font-family: 'Open Sans', sans-serif;
 color: white;
 margin-left: 2%;
-width: 50%;
+width: 50vw;
+font-size: 2em;
+position:absolute;
+top:450px;
+font-weight: 500;
+/* margin-left: 50px; */
 }
 
 .rect {
-width: 100px;
-height: 20px;
+width: 75px;
+height: 10px;
 margin: 3px;
 background-color: #333333;
 color: white;
@@ -149,9 +155,11 @@ z-index: 0;
     width: 65%;
     height: auto;
     color: white;
-    font-family: clean_sports_stencilregular;
+    font-family: 'clean_sports_stencilregular';
     margin-left: 2%;
     margin-top: 2%;
+    box-shadow: #333333;
+    margin-left: 25px;
 }
 
 .column-containter {
@@ -194,7 +202,7 @@ z-index: 0;
     width: 400px;
     padding: 0px;
     margin-top: 1%;
-    margin-left: 63%;
+    margin-left: 68%;
     position: absolute;
     /* bottom: 60px; */
     color: white;
@@ -243,28 +251,10 @@ li:hover {
     width:850px; 
     height:557px; 
     position: absolute;
-    bottom: 10px;
+    top:20%;
     margin-left:50vw;
     z-index: 0;
     transition: width 1s, height 1s;
-}
-
-@media only screen and (max-width: 600px) {
-    #football{
-        width:850px; 
-        height:557px; 
-        position: absolute;
-        /* bottom: 101px; */
-        margin-left:50vw;
-        z-index: 0;
-        transition: width 1s, height 1s;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    #football {
-        bottom: 8%;
-    }
 }
 
 #football:hover {
@@ -282,8 +272,32 @@ li:hover {
 
 #token-span {
     position: relative;
-    margin-left:-25px;
+    margin-left:0px;
 }
+
+#utv-large {
+    margin-top:100px;
+    font-size:350px;
+    margin-left: 50px;
+}
+
+/* @media only screen and (max-width:900px) {
+    #football {
+        font-size: 75px;
+    }
+} */
+
+
+/* @media only screen and (max-width: 600px) {
+    #football{
+        width:850px; 
+        height:557px; 
+        position: absolute;
+        margin-left:50vw;
+        z-index: 0;
+        transition: width 1s, height 1s;
+    }
+} */
 
 /* mobile styles */
 @media only screen and (max-width: 600px) {
@@ -291,17 +305,16 @@ li:hover {
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 95%);
     }
     #logo{
+        margin-top: 30px;
         font-size:25px;
+        margin-left: 0px;
     }
     #football{
         display: none;
     } 
-    .angled-text{
-        margin-left: 10%;
-        width:100%;
-    }
+
     #token-span {
-        margin-left: 39px;
+        margin-left: 0px;
     }
 
     .column-containter {
@@ -321,8 +334,19 @@ li:hover {
         margin-top: 30%;
     }
     
-    span#utv-large {
-        font-size:25px;
+    #utv-large {
+        font-size:180px;
+        margin-left: 0px;
+    }
+
+    .social-logo {
+        padding: 0px;
+    }
+
+    .angled-text, #home-section{
+        margin-left: 0px;
+        width:100%;
+        top: 358px;
     }
 
 }
